@@ -12,12 +12,12 @@
   </style>
 </head>
 <body>
-  <h1 id="judul">Helo world!</h1>
-  <p id="paragraf">Ini adalah paragraf awal.</p>
+  <h1 id="judul">Teks dengan perubahan warna</h1>
+  <p id="paragraf">Teks sebelum diubah</p>
   <button onclick="ubahTeks()">Ubah Teks</button>
 
   <ul id="daftar">
-    <li>Item 1</li>
+    <li>Item</li>
   </ul>
   <button onclick="tambahItem()">Tambah Item</button>
 
@@ -30,7 +30,7 @@
     function tambahItem() {
       const ul = document.getElementById("daftar");
       const liBaru = document.createElement("li");
-      liBaru.textContent = "Item baru";
+      liBaru.textContent = "Item";
       ul.appendChild(liBaru);
     }
   </script>
