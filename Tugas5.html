@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manipulasi DOM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #judul {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="judul">Helo world!</h1>
+  <p id="paragraf">Ini adalah paragraf awal.</p>
+  <button onclick="ubahTeks()">Ubah Teks</button>
+
+  <ul id="daftar">
+    <li>Item 1</li>
+  </ul>
+  <button onclick="tambahItem()">Tambah Item</button>
+
+  <script>
+    function ubahTeks() {
+      document.getElementById("paragraf").textContent = "Teks telah diubah!";
+      document.getElementById("judul").style.color = "blue";
+    }
+
+    function tambahItem() {
+      const ul = document.getElementById("daftar");
+      const liBaru = document.createElement("li");
+      liBaru.textContent = "Item baru";
+      ul.appendChild(liBaru);
+    }
+  </script>
+</body>
+</html>
